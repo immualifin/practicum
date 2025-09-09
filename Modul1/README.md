@@ -1,30 +1,44 @@
-# Praktikum 1: Pengenalan Flutter
+# 📘 Ringkasan Laporan Praktikum Mobile Programming
 
-[cite_start]Ini adalah proyek untuk laporan praktikum pertama mata kuliah Mobile Programming[cite: 1]. Proyek ini mencakup dasar-dasar pembuatan aplikasi Flutter, modifikasi UI sederhana, dan menjalankannya di emulator serta perangkat fisik.
+**Modul:** Desain UI dengan Layout **Row** dan **Column** di Flutter
 
 ---
 
-## 📝 Deskripsi
+## 📝 Deskripsi Praktikum
+Tujuan dari praktikum ini adalah untuk menerapkan dan membandingkan penggunaan widget **Row** dan **Column** dalam merancang antarmuka pengguna (UI) untuk sebuah aplikasi prakiraan cuaca sederhana menggunakan Flutter.  
+Praktikum ini berfokus pada pemahaman cara menyusun widget secara **horizontal** dan **vertikal** untuk membangun desain yang terstruktur.
 
-[cite_start]Tujuan dari praktikum ini adalah untuk memahami alur kerja dasar pengembangan Flutter[cite: 12, 13]. Langkah-langkah yang dilakukan meliputi:
-1.  [cite_start]Membuat proyek Flutter baru di Android Studio[cite: 17].
-2.  [cite_start]Menjalankan aplikasi *default* pada emulator[cite: 19].
-3.  [cite_start]Memodifikasi UI dengan mengubah teks pada `AppBar` dan `body` aplikasi[cite: 20].
-4.  [cite_start]Menguji aplikasi pada *smartphone* Android melalui USB debugging[cite: 21].
+---
+
+## 🚀 Langkah Kerja
+Berikut adalah ringkasan langkah-langkah yang dilakukan selama praktikum:
+
+1. Membuat proyek Flutter baru di Android Studio.  
+2. Menjalankan aplikasi default pada emulator untuk memastikan lingkungan kerja berfungsi.  
+3. Memodifikasi kode untuk mengubah teks pada AppBar dan menampilkan tulisan **"Hello World"** di body.  
+4. Melakukan pengujian aplikasi pada smartphone fisik melalui fitur **USB debugging**.  
+5. Mencatat dan membandingkan waktu eksekusi aplikasi antara emulator dan smartphone.  
+
+---
+
+## 📱 Hasil
+- Aplikasi berhasil dimodifikasi untuk menampilkan judul **"Praktikum"** pada AppBar dan teks **"Hello World"** pada konten utama.  
+- Tampilan aplikasi berhasil dijalankan dan diverifikasi baik pada emulator maupun smartphone Android.  
+- Tercatat waktu eksekusi untuk:
+  - **Hot Reload (Emulator):** 2.965 ms  
+  - **Hot Restart (Smartphone POCO F1):** 1.941 ms  
 
 ---
 
 ## 🧑‍💻 Informasi Penyusun
-
-* [cite_start]**Nama**: Muhammad Ibnu Mualifin [cite: 3]
-* [cite_start]**NIM**: 230605110137 [cite: 4]
-* [cite_start]**Kelas**: C [cite: 5]
+- **Nama:** Muhammad Ibnu Mualifin  
+- **NIM:** 230605110137  
+- **Kelas:** C  
 
 ---
 
 ## 🎓 Institusi
-
-[cite_start]**Jurusan Teknik Informatika** [cite: 7]
-[cite_start]**Fakultas Sains dan Teknologi** [cite: 8]
-[cite_start]**Universitas Islam Negeri Maulana Malik Ibrahim Malang** [cite: 9]
-[cite_start]**Ganjil 2025/2026** [cite: 10]
+- **Jurusan:** Teknik Informatika  
+- **Fakultas:** Sains dan Teknologi  
+- **Universitas:** Universitas Islam Negeri Maulana Malik Ibrahim Malang  
+- **Semester:** Ganjil 2025/2026  
