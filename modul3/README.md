@@ -1,16 +1,23 @@
-# modul3
+Praktikum Flutter: Desain UI Aplikasi Cuaca
+Proyek ini adalah implementasi dari tugas praktikum Mobile Programming, yang berfokus pada pembuatan antarmuka pengguna (UI) aplikasi cuaca sederhana menggunakan Flutter.
 
-A new Flutter project.
+🎯 Tujuan
+Tujuan utama dari proyek ini adalah untuk memahami penggunaan praktis dari widget Row dan Column. Latihan ini mencakup cara menyusun beberapa widget—termasuk Text dan Icon dengan gambar yang berbeda—untuk menciptakan tata letak yang terstruktur secara vertikal dan horizontal.
 
-## Getting Started
+🚀 Konsep yang Diterapkan
+Struktur Vertikal (Column): Digunakan sebagai layout utama untuk menata elemen dari atas ke bawah (nama kota, suhu, prakiraan harian).
 
-This project is a starting point for a Flutter application.
+Struktur Horizontal (Row): Digunakan untuk menampilkan beberapa item prakiraan cuaca harian secara berdampingan.
 
-A few resources to get you started if this is your first Flutter project:
+Widget Kustom: Membuat komponen DailyForecast yang dapat digunakan kembali untuk setiap item prakiraan, membuat kode lebih bersih dan efisien.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Styling Dasar: Menerapkan gaya visual pada Text dan Icon untuk menciptakan hierarki visual yang jelas.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+🧑‍💻 Informasi Penyusun
+Nama: Muhammad Ibnu Mualifin
+
+NIM: 230605110137
+
+Kelas: C
+
+Institusi: UIN Maulana Malik Ibrahim Malang
