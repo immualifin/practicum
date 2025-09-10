@@ -1,23 +1,34 @@
-Praktikum Flutter: Desain UI Aplikasi Cuaca
-Proyek ini adalah implementasi dari tugas praktikum Mobile Programming, yang berfokus pada pembuatan antarmuka pengguna (UI) aplikasi cuaca sederhana menggunakan Flutter.
+# 🌤️ Praktikum Flutter: Desain UI Aplikasi Cuaca
 
-🎯 Tujuan
-Tujuan utama dari proyek ini adalah untuk memahami penggunaan praktis dari widget Row dan Column. Latihan ini mencakup cara menyusun beberapa widget—termasuk Text dan Icon dengan gambar yang berbeda—untuk menciptakan tata letak yang terstruktur secara vertikal dan horizontal.
+Proyek ini adalah implementasi dari tugas praktikum **Mobile Programming**, yang berfokus pada pembuatan antarmuka pengguna (UI) aplikasi cuaca sederhana menggunakan **Flutter**.
 
-🚀 Konsep yang Diterapkan
-Struktur Vertikal (Column): Digunakan sebagai layout utama untuk menata elemen dari atas ke bawah (nama kota, suhu, prakiraan harian).
+---
 
-Struktur Horizontal (Row): Digunakan untuk menampilkan beberapa item prakiraan cuaca harian secara berdampingan.
+## 🎯 Tujuan
+Tujuan utama dari proyek ini adalah untuk memahami penggunaan praktis dari widget **Row** dan **Column**.  
+Latihan ini mencakup bagaimana menyusun beberapa widget—termasuk **Text** dan **Icon** dengan gambar yang berbeda—untuk menciptakan tata letak yang terstruktur secara **vertikal** dan **horizontal**.
 
-Widget Kustom: Membuat komponen DailyForecast yang dapat digunakan kembali untuk setiap item prakiraan, membuat kode lebih bersih dan efisien.
+---
 
-Styling Dasar: Menerapkan gaya visual pada Text dan Icon untuk menciptakan hierarki visual yang jelas.
+## 🚀 Konsep yang Diterapkan
+- **Struktur Vertikal (Column):**  
+  Digunakan sebagai layout utama untuk menata elemen dari atas ke bawah (nama kota, suhu, prakiraan harian).
 
-🧑‍💻 Informasi Penyusun
-Nama: Muhammad Ibnu Mualifin
+- **Struktur Horizontal (Row):**  
+  Digunakan untuk menampilkan beberapa item prakiraan cuaca harian secara berdampingan.
 
-NIM: 230605110137
+- **Widget Kustom:**  
+  Membuat komponen **DailyForecast** yang dapat digunakan kembali untuk setiap item prakiraan, sehingga kode lebih bersih dan efisien.
 
-Kelas: C
+- **Styling Dasar:**  
+  Menerapkan gaya visual pada **Text** dan **Icon** untuk menciptakan hierarki visual yang jelas.
 
-Institusi: UIN Maulana Malik Ibrahim Malang
+---
+
+## 🧑‍💻 Informasi Penyusun
+- **Nama:** Muhammad Ibnu Mualifin
+- **NIM:** 230605110137
+- **Kelas:** C
+- **Institusi:** Universitas Islam Negeri Maulana Malik Ibrahim Malang
+
+---
