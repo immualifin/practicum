@@ -22,7 +22,7 @@ Proyek ini adalah implementasi praktikum **Mobile Programming** menggunakan Flut
 ## 📷 Screenshot
 Tampilan hasil pada emulator:  
 
-![Music Player Screenshot](musicplayer.png)
+![Music Player Screenshot](musicplayer.PNG)
 
 ## ✅ Kesimpulan
 - Tombol dapat ditampilkan dengan ukuran berbeda tanpa mengganggu tata letak.  
