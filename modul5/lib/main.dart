@@ -30,8 +30,8 @@ class MyApp extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
+                  const Center(child: Icon(Icons.album_rounded, size: 100)),
                   const ListTile(
-                    leading: Icon(Icons.location_pin, color: Colors.red),
                     title: Text(
                       'Di sini ada judul lagu',
                       style: TextStyle(
