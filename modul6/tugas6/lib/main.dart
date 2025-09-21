@@ -80,7 +80,6 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-
 Container _tombolBaca() {
   return Container(
     padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 15),
@@ -88,10 +87,7 @@ Container _tombolBaca() {
       color: Colors.orange,
       borderRadius: BorderRadius.circular(15),
     ),
-    child: const Text(
-      'Baca Info',
-      style: TextStyle(color: Colors.white),
-    ),
+    child: const Text('Baca Info', style: TextStyle(color: Colors.white)),
   );
 }
 
