@@ -1,4 +1,3 @@
-```markdown
 # 🎮 Navigasi dengan Named Route & API FreeToGame di Flutter  
 
 Proyek ini adalah implementasi praktikum **Mobile Programming** menggunakan Flutter untuk memahami **navigasi antar halaman** dengan **Named Route**, sekaligus menampilkan data dari **API FreeToGame**. Aplikasi memiliki dua halaman utama, yaitu **Halaman Home** (menampilkan informasi singkat sebuah game) dan **Halaman Tujuan** (menampilkan detail lengkap game).  
@@ -79,5 +78,3 @@ flutter pub get
 * **ScreenArguments** sangat berguna untuk membawa data kompleks (gambar, teks, deskripsi) antar halaman.
 * Dengan memanfaatkan **http request**, aplikasi bisa menampilkan data dinamis dari API eksternal.
 * Konsep ini menjadi dasar untuk membangun aplikasi Flutter multi-halaman yang lebih interaktif dan real-time.
-
-```
