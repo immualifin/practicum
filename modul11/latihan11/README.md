@@ -35,6 +35,7 @@ Konsep utama yang diterapkan meliputi:
           flutter:
             sdk: flutter
           get: ^4.6.5
+          simple_circular_progress_bar: ^1.0.2
         ```
       - Jalankan perintah di terminal untuk menginstal paket:
         ```bash
