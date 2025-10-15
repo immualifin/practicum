@@ -25,7 +25,16 @@ Konsep utama yang diterapkan meliputi:
 
 1.  **Membuat Proyek Flutter Baru**
 
-      - Buat proyek baru dengan nama `tasbih_getx`.
+      - Buat proyek baru.
+
+        ```struktur program
+        ├── main.dart
+        ├── model
+        ├── view
+          └── home.dart
+        └── viewmodel
+          └── tasbih_controller.dart
+        ```
 
 2.  **Menambahkan *Dependency***
 
