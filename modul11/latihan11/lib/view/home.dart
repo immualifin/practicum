@@ -19,7 +19,7 @@ class Home extends StatelessWidget {
                 () => Text(
                   '${controller.counter.value.round()}',
                   style: const TextStyle(
-                    fontSize: 250,
+                    fontSize: 200,
                   ),
                 ),
               ),
