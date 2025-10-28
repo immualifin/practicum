@@ -26,9 +26,15 @@ Aplikasi ini menampilkan daftar 114 surah lengkap beserta teks Arab, terjemahan 
 
 ## 📸 Screenshots
 
-| Splash Screen | Home Screen | Detail Surah Screen |
-|:---:|:---:|:---:|
-| ![Splash Screen](splash_screen.png) | ![Home Screen](home_screen.png) | | ![Detail Surah Screen](detail_surah_screen.png) | 
+| Splash Screen |
+|:---:|
+| ![Splash Screen](splash_screen.png) | 
+| Home Screen |
+|:---:|
+| ![Home Screen](home_screen.png) | 
+| Detail Surah Screen |
+|:---:|
+| ![Detail Surah Screen](detail_surah_screen.png) | 
 
 
 
