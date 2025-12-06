@@ -2,72 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quran_app/globals.dart';
+import 'package:quran_app/tabs/hijb_tab.dart';
+import 'package:quran_app/tabs/page_tab.dart';
+import 'package:quran_app/tabs/para_tab.dart';
 import 'package:quran_app/tabs/surah_tab.dart';
-import 'package:quran_app/screens/bookmark_screen.dart';
 
-class HomeScreen extends StatefulWidget {
+class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
-
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateMixin {
-  int _currentIndex = 1; // Default to Quran tab
-  late TabController _tabController;
-
-  @override
-  void initState() {
-    super.initState();
-    _tabController = TabController(length: 1, vsync: this); // Only 1 tab currently visible
-    _tabController.addListener(() {
-      setState(() {
-        _currentIndex = 1; // Always Quran tab when TabBar is used
-      });
-    });
-    // Ensure bottom navigation shows Quran tab as active on initial load
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted) {
-        setState(() {
-          _currentIndex = 1; // Quran tab
-        });
-      }
-    });
-  }
-
-  @override
-  void dispose() {
-    _tabController.dispose();
-    super.dispose();
-  }
-
-  void _onTabTapped(int index) {
-    if (index == _currentIndex) return; // Don't do anything if same tab is tapped
-
-    // Update UI state immediately to show visual feedback
-    setState(() {
-      _currentIndex = index;
-    });
-
-    // Handle navigation after UI update
-    if (index == 0 || index == 1) {
-      // Handle Doa and Quran tabs - just keep on same screen since we only have 1 tab
-      // No need to animate TabController since we only have 1 tab (Surah)
-      // The visual feedback is handled by setState above
-    } else if (index == 2) {
-      // Navigate to Bookmark screen when bookmark tab is tapped
-      Future.delayed(const Duration(milliseconds: 100), () {
-        if (mounted) {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const BookmarkScreen(),
-            ),
-          );
-        }
-      });
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -75,43 +16,51 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
       backgroundColor: background,
       appBar: _appBar(),
       bottomNavigationBar: _bottomNavigationBar(),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 24),
-        child: NestedScrollView(
-          headerSliverBuilder: (context, innerBoxIsScrolled) => [
-            SliverToBoxAdapter(child: _greeting()),
-            SliverAppBar(
-              pinned: true,
-              elevation: 0,
-              backgroundColor: background,
-              automaticallyImplyLeading: false,
-              shape: Border(
-                bottom: BorderSide(
-                  color: Colors.grey.withOpacity(.1),
-                  width: 3,
+      body: DefaultTabController(
+        length: 4,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24),
+          child: NestedScrollView(
+            headerSliverBuilder: (context, innerBoxIsScrolled) => [
+              SliverToBoxAdapter(child: _greeting()),
+              SliverAppBar(
+                pinned: true,
+                elevation: 0,
+                backgroundColor: background,
+                automaticallyImplyLeading: false,
+                shape: Border(
+                  bottom: BorderSide(
+                    color: Colors.grey.withOpacity(.1),
+                    width: 3,
+                  ),
+                ),
+                bottom: PreferredSize(
+                  preferredSize: const Size.fromHeight(24),
+                  child: _tab(),
                 ),
               ),
-              bottom: PreferredSize(
-                preferredSize: const Size.fromHeight(24),
-                child: TabBar(
-                  controller: _tabController,
-                  unselectedLabelColor: Colors.grey,
-                  labelColor: cardColor,
-                  indicatorColor: cardColor,
-                  indicatorWeight: 3,
-                  tabs: [
-                    _tabItem(label: 'Surah'),
-                  ],
-                ),
-              ),
+            ],
+            body: const TabBarView(
+              children: [SurahTab(), ParaTab(), PageTab(), HijbTab()],
             ),
-          ],
-          body: TabBarView(
-            controller: _tabController,
-            children: const [SurahTab()], // Only SurahTab currently implemented
           ),
         ),
       ),
+    );
+  }
+
+  TabBar _tab() {
+    return TabBar(
+      unselectedLabelColor: Colors.grey,
+      labelColor: cardColor,
+      indicatorColor: cardColor,
+      indicatorWeight: 3,
+      tabs: [
+        _tabItem(label: 'Surah'),
+        _tabItem(label: 'Para'),
+        _tabItem(label: 'page'),
+        _tabItem(label: 'Hijb'),
+      ],
     );
   }
 
@@ -130,6 +79,10 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
     elevation: 0,
     title: Row(
       children: [
+        IconButton(
+          onPressed: (() => {}),
+          icon: SvgPicture.asset('assets/svgs/menu-icon.svg'),
+        ),
         const SizedBox(width: 24),
         Text(
           'Quran App',
@@ -239,8 +192,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
     backgroundColor: Colors.white,
     showSelectedLabels: false,
     showUnselectedLabels: false,
-    currentIndex: _currentIndex,
-    onTap: _onTabTapped,
+    currentIndex: 1,
     items: [
       _bottomBarItem(icon: "assets/svgs/doa-icon.svg", label: "Doa"),
       _bottomBarItem(icon: "assets/svgs/quran-icon.svg", label: "Quran"),
